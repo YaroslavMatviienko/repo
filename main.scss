@@ -1,1 +1,13 @@
+@import './style/reset';
+@import './style/variables';
+@import './style/person';
+@import './style/people';
 
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}

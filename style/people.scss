@@ -1,0 +1,19 @@
+.people{
+  justify-content: center;
+  --count: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--count), $card-width);
+  justify-content: center;
+  gap: 40px 40px;
+
+  padding: 50px 40px;
+
+  @media (min-width: 500px) {
+    --count: 2;
+  }
+
+  @media (min-width: 1000px) {
+    --count: 4;
+  }
+}
