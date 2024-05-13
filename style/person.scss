@@ -1,0 +1,40 @@
+.person{
+  display: block;
+  width: $card-width;
+  transition: 1s;
+}
+
+.person:hover {
+  transform: scale(1.2);
+}
+
+.photo {
+  width: $card-width;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+.rank {
+  position: absolute;
+  align-items: center; 
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px; 
+  color: #8B0000;
+}
+
+.personPhoto {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
