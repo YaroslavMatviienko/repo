@@ -1,0 +1,85 @@
+h1, h2, h3, h4, div, body, p, ul, ol {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+li, a {
+  text-decoration: none;
+}
+
+li {
+  padding: 0;
+}
+
+.person {
+  width: 200px;
+  transition: all 1s;
+  display: block;
+}
+
+.person:hover {
+  transform: scale(1.2);
+}
+
+.photo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.rank {
+  color: #8b0000;
+  background-color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  padding: 5px;
+  position: absolute;
+}
+
+.personPhoto {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.details {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.people {
+  --count: 1;
+  grid-template-columns: repeat(var(--count), 200px);
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 40px;
+  display: grid;
+}
+
+@media (width >= 500px) {
+  .people {
+    --count: 2;
+  }
+}
+
+@media (width >= 1000px) {
+  .people {
+    --count: 4;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}
+/*# sourceMappingURL=index.b1276d39.css.map */
